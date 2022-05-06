@@ -96,6 +96,15 @@ CREATE
       (Chucky:Movie{
           name:'Chucky el muñeco',
           api_id:335776
+      }),
+      (Orgullo y prejuicio:Movie{
+          name:'Orgullo y prejuicio',
+          api_id:335897
+       }),
+      (Spencer:Movie{
+          name:'Spencer',
+          api_id:335
+          
 })
 
 CREATE (Brian)-[:IN_LIKE_GENRE]->(Terror)
