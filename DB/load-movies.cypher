@@ -103,7 +103,17 @@ CREATE
        }),
       (Spencer:Movie{
           name:'Spencer',
-          api_id:335
+          api_id:335998
+
+        }),
+      (Fast & Furious 9:Movie{
+          name:'Fast & Furious 9',
+          api_id:335654
+
+        }),
+      (Red:Movie{
+          name:'Red',
+          api_id:335654
           
 })
 
