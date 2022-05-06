@@ -31,19 +31,19 @@ CREATE
 CREATE
       (Exorcismo:Movie{
           name:'Excorismo documentado',
-          apiID:335787
+          api_id:335787
       }),
       (Sonic:Movie{
           name:'Sonic:La pelicula',
-          apiID:335788
+          api_id:335788
       }),
       (Chiquito:Movie{
           name:'Chiquito pero peligroso',
-          apiID:335789
+          api_id:335789
       }),
       (Chucky:Movie{
           name:'Chucky el muñeco',
-          apiID:335776
+          api_id:335776
 })
 
 CREATE (Brian)-[:IN_LIKE_GENRE]->(Terror)
