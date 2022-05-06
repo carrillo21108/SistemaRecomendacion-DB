@@ -97,7 +97,7 @@ CREATE
           name:'Chucky el muñeco',
           api_id:335776
       }),
-      (Orgullo y prejuicio:Movie{
+      (OrgulloYPrejuicio:Movie{
           name:'Orgullo y prejuicio',
           api_id:335897
        }),
@@ -106,7 +106,7 @@ CREATE
           api_id:335998
 
         }),
-      (Fast & Furious 9:Movie{
+      (FastAndFurious9:Movie{
           name:'Fast & Furious 9',
           api_id:335654
 
@@ -119,11 +119,19 @@ CREATE
 
 CREATE (Brian)-[:IN_LIKE_GENRE]->(Terror)
 CREATE (Carlos)-[:IN_LIKE_GENRE]->(Terror)
+CREATE (Jennifer)-[:IN_LIKE_GENRE]->(Romance)
+CREATE (Andrea)-[:IN_LIKE_GENRE]->(Fantasia)
+CREATE (Monica)-[:IN_LIKE_GENRE]->(Romance)
+CREATE (Nathalia)-[:IN_LIKE_GENRE]->(Terror)
 
 CREATE (Exorcismo)-[:IN_GENRE]->(Terror)
 CREATE (Chucky)-[:IN_GENRE]->(Terror)
 CREATE (Sonic)-[:IN_GENRE]->(Aventura)
 CREATE (Chiquito)-[:IN_GENRE]->(Comedia)
+CREATE (OrgulloYPrejuicio)-[:IN_GENRE]->(Romance)
+CREATE (Red)-[:IN_GENRE]->(Fantasia)
 
 CREATE (Carlos)-[:IN_LIKE_MOVIE]->(Sonic)
 CREATE (Carlos)-[:IN_LIKE_MOVIE]->(Chiquito)
+CREATE (Nathalia)-[:IN_LIKE_MOVIE]->(OrgulloYPrejuicio)
+CREATE (Monica)-[:IN_LIKE_MOVIE]->(Spencer)
