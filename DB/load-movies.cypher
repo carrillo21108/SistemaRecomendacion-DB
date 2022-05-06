@@ -5,6 +5,7 @@ CREATE
           age:20,
           gender:'M',
           mail:'bcarrillo0311@gmail.com'
+          password:'123'
       }),
       (Carlos:User{
           name:'Carlos Edgardo',
@@ -12,6 +13,7 @@ CREATE
           age:20,
           gender:'M',
           mail:'carloslpez217@gmail.com'
+          password:'123'
 })
 
 CREATE
