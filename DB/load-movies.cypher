@@ -61,6 +61,22 @@ CREATE
       (Comedia:Genre{
           name:'Comedia',
           lastname:'Diseñadas específicamente para provocar la risa o la alegría entre los espectadores.'
+       }),
+      (Romance:Genre{
+          name:'Romance',
+          description:'Creadas para sentir amor.'
+        }),
+      (Drama:Genre{
+          name:'Drama',
+          description:'Son drámaticas y llegan a sentir muchas emociones a la vez.'
+          }),
+      (Accion:Genre{
+          name:'Accion',
+          description:'Situaciones de accion y aventura con explosiones.'
+          }),
+      (Fantasia:Genre{
+          name:'Fantasia',
+          description:'Ficcion especulativa.'
     
 })
 
