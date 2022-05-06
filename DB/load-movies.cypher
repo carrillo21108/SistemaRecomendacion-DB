@@ -4,7 +4,7 @@ CREATE
           lastname:'Carrillo Monzon',
           age:20,
           gender:'M',
-          mail:'bcarrillo0311@gmail.com'
+          mail:'bcarrillo0311@gmail.com',
           password:'123'
       }),
       (Carlos:User{
@@ -12,7 +12,7 @@ CREATE
           lastname:'Lopez Barrera',
           age:20,
           gender:'M',
-          mail:'carloslpez217@gmail.com'
+          mail:'carloslpez217@gmail.com',
           password:'123'
 })
 
