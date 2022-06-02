@@ -117,6 +117,7 @@ CREATE
           
 })
 
+MATCH (a:User),(b:Movie) WHERE a.name = '' AND b.name = '' CREATE (a)-[:IN_LIKE_MOVIE]->(b)
 CREATE (Brian)-[:IN_LIKE_GENRE]->(Terror)
 CREATE (Carlos)-[:IN_LIKE_GENRE]->(Terror)
 CREATE (Jennifer)-[:IN_LIKE_GENRE]->(Romance)
@@ -124,6 +125,7 @@ CREATE (Andrea)-[:IN_LIKE_GENRE]->(Fantasia)
 CREATE (Monica)-[:IN_LIKE_GENRE]->(Romance)
 CREATE (Nathalia)-[:IN_LIKE_GENRE]->(Terror)
 
+MATCH (a:Movie),(b:Genre) WHERE a.name = '' AND b.name = '' CREATE (a)-[:IN_GENRE]->(b)
 CREATE (Exorcismo)-[:IN_GENRE]->(Terror)
 CREATE (Chucky)-[:IN_GENRE]->(Terror)
 CREATE (Sonic)-[:IN_GENRE]->(Aventura)
@@ -135,3 +137,12 @@ CREATE (Carlos)-[:IN_LIKE_MOVIE]->(Sonic)
 CREATE (Carlos)-[:IN_LIKE_MOVIE]->(Chiquito)
 CREATE (Nathalia)-[:IN_LIKE_MOVIE]->(OrgulloYPrejuicio)
 CREATE (Monica)-[:IN_LIKE_MOVIE]->(Spencer)
+
+MATCH movies=(Brian:User{
+          name:'Brian Anthony',
+          lastname:'Carrillo Monzon',
+          age:20,
+          gender:'M',
+          mail:'bcarrillo0311@gmail.com',
+          password:'123'})-[:IN_LIKE_GENRE]->(genre)<-[:IN_GENRE]-(movie)
+RETURN movie.name
