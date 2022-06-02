@@ -117,6 +117,7 @@ CREATE
           
 })
 
+MATCH (a:User),(b:Movie) WHERE a.name = '' AND b.name = '' CREATE (a)-[:IN_LIKE_MOVIE]->(b)
 CREATE (Brian)-[:IN_LIKE_GENRE]->(Terror)
 CREATE (Carlos)-[:IN_LIKE_GENRE]->(Terror)
 CREATE (Jennifer)-[:IN_LIKE_GENRE]->(Romance)
@@ -124,6 +125,7 @@ CREATE (Andrea)-[:IN_LIKE_GENRE]->(Fantasia)
 CREATE (Monica)-[:IN_LIKE_GENRE]->(Romance)
 CREATE (Nathalia)-[:IN_LIKE_GENRE]->(Terror)
 
+MATCH (a:Movie),(b:Genre) WHERE a.name = '' AND b.name = '' CREATE (a)-[:IN_GENRE]->(b)
 CREATE (Exorcismo)-[:IN_GENRE]->(Terror)
 CREATE (Chucky)-[:IN_GENRE]->(Terror)
 CREATE (Sonic)-[:IN_GENRE]->(Aventura)
